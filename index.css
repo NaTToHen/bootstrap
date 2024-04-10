@@ -1,0 +1,67 @@
+body {
+   background: #d7d7d7;
+}
+
+main {
+   height: calc(100vh - 60px - 56px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   display: grid;
+   width: 60%;
+   margin: 0 auto;
+   min-height: 400px;
+   grid-template-columns: 18rem auto;
+   column-gap: 40px;
+}
+
+footer {
+   position: absolute;
+   bottom: 0px;
+   background: white;
+   height: 60px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+.btn {
+   align-self: flex-end;
+   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+   }
+
+   .card {
+      max-width: 300px;
+   }
+
+   main {
+      height: auto;
+      margin-top: 50px;
+   }
+
+   .container form {
+      min-width: 100%;
+   }
+
+   footer {
+      position: static;
+      margin-top: 60px;
+   }
+}
